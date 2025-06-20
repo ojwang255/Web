@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>register</title>
+<nav style="background-color: #45a049;">
+
+<a href="1home.html">homepg</a>
+<a href="2About.us.html">about</a>
+<a href="3visit.html">visit</a>
+<a href="4register.html">register</a>
+
+</nav>
+<link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.css">
+<link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="info.css">
+<div class="container-fluid bg-danger">
+<div class="col-12">
+
+<link rel="stylesheet" href="visit.html">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    label {
+      font-weight: bold;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .gender-options input {
+      width: auto;
+      margin-right: 5px;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">User Registration Form</h2>
+
+  <form action="#" method="post">
+    
+    <div class="form-group">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+
+    <div class="form-group">
+      <label>Gender:</label><br>
+      <div class="gender-options">
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">--Select Country--</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Uganda">Uganda</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="language">select Language:</label>
+      <select id="language" name="language">
+        <option value="English">English</option>
+        <option value="Swahili">Swahili</option>
+        <option value="French">French</option>
+        <option value="Arabic">Arabic</option>
+
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="subscribe">
+        <input type="checkbox" id="join" name="join"> JOIN AFRICA IN ADVENTURE
+      </label>
+    </div>
+
+    <div class="form-group">
+      <button type="submit">Submit</button>
+    </div>
+
+  </form>
+</body>
+</html>
